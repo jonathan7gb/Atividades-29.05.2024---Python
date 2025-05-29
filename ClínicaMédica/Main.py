@@ -41,7 +41,7 @@ while escolha != 5:
             
         case 2:
             print("\n--- Lista de Pacientes com Consulta nos Útlimos 30 Dias ---")
-            comando = "SELECT * FROM pacientes where ultima_consulta_paciente > '2025-04-29' ORDER BY ultima_consulta_paciente DESC"
+            comando = "SELECT * FROM pacientes where ultima_consulta_paciente > '2025-04-29' and ultima_consulta_paciente < '2025-05-29' ORDER BY ultima_consulta_paciente DESC"
             cursor.execute(comando)
             pacientes = cursor.fetchall()
             t.sleep(1)
