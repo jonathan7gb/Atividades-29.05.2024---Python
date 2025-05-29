@@ -1,7 +1,6 @@
 import mysql.connector
 import time as t
 
-
 conexao = mysql.connector.connect(
     host = 'localhost',
     user = 'root',
